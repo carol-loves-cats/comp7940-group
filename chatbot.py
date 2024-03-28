@@ -7,6 +7,7 @@ import logging
 from mongoDB import mongoDBconnect
 from ChatGPT_HKBU import HKBU_ChatGPT
 # import re
+import os
 
 # global redis1
 global mongoDB
