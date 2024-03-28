@@ -34,7 +34,7 @@ def main():
 
     # dispatcher for chatgpt
     global chatgpt
-    chatgpt = HKBU_ChatGPT(config)
+    chatgpt = HKBU_ChatGPT()
     # chatgpt_handler = MessageHandler(Filters.text & (~Filters.command), equiped_chatgpt)
     message_handler = MessageHandler(Filters.text & (~Filters.command), keywords)
     dispatcher.add_handler(message_handler)
